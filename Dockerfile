@@ -2,9 +2,9 @@
 FROM python:3.9-slim
 
 # Set environment variables
-ENV PYTHONDONTWRITEBYTECODE 1  # Prevents Python from writing .pyc files
-ENV PYTHONUNBUFFERED 1        # Prevents Python output from being buffered
-ENV TZ=Etc/UTC                # Set timezone to UTC
+ENV PYTHONDONTWRITEBYTECODE 1 
+ENV PYTHONUNBUFFERED 1        
+ENV TZ=Etc/UTC                
 
 # Set the working directory
 WORKDIR /usr/src/app
