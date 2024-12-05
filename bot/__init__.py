@@ -13,15 +13,15 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 ENV = bool(os.environ.get('ENV', False))
 try:
   if ENV:
-    BOT_TOKEN = os.environ.get('BOT_TOKEN')
-    APP_ID = os.environ.get('APP_ID')
-    API_HASH = os.environ.get('API_HASH')
+    BOT_TOKEN = os.environ.get('tk')
+    APP_ID = os.environ.get('apiid')
+    API_HASH = os.environ.get('apihash')
     DATABASE_URL = os.environ.get('DATABASE_URL')
-    SUDO_USERS = os.environ.get('SUDO_USERS')
-    SUPPORT_CHAT_LINK = os.environ.get('SUPPORT_CHAT_LINK')
+    SUDO_USERS = os.environ.get('auth')
+    SUPPORT_CHAT_LINK = os.environ.get('clink')
     DOWNLOAD_DIRECTORY = os.environ.get("DOWNLOAD_DIRECTORY", "./downloads/")
-    G_DRIVE_CLIENT_ID = os.environ.get("G_DRIVE_CLIENT_ID")
-    G_DRIVE_CLIENT_SECRET = os.environ.get("G_DRIVE_CLIENT_SECRET")
+    G_DRIVE_CLIENT_ID = os.environ.get("clientid")
+    G_DRIVE_CLIENT_SECRET = os.environ.get("clients")
   else:
     from bot.config import config
     BOT_TOKEN = config.BOT_TOKEN
