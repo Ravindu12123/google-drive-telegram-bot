@@ -1,13 +1,15 @@
+import os
+
 class config:
-    BOT_TOKEN = ""
-    APP_ID = ""
-    API_HASH = ""
-    DATABASE_URL = ""
-    SUDO_USERS = "" # Sepearted by space.
-    SUPPORT_CHAT_LINK = ""
+    BOT_TOKEN = os.getenv("tk")
+    APP_ID = os.getenv("apiid")
+    API_HASH = os.getenv("apihash")
+    DATABASE_URL = os.getenv("dbul","")
+    SUDO_USERS = os.getenv("auth") # Sepearted by space.
+    SUPPORT_CHAT_LINK =os.getenv("clink")
     DOWNLOAD_DIRECTORY = "./downloads/"
-    G_DRIVE_CLIENT_ID = ""
-    G_DRIVE_CLIENT_SECRET = ""
+    G_DRIVE_CLIENT_ID = os.getenv("clientid")
+    G_DRIVE_CLIENT_SECRET = os.getenv("clients")
 
 
 class BotCommands:
