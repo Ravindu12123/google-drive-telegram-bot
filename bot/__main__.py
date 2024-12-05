@@ -23,7 +23,7 @@ if __name__ == "__main__":
         root="bot/plugins"
     )
     app = Client(
-        "G-DriveBot",
+        "RXG-DriveBot",
         bot_token=BOT_TOKEN,
         api_id=APP_ID,
         api_hash=API_HASH,
